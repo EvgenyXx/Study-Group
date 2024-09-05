@@ -24,8 +24,24 @@ public class Main {
 
         Teacher teacher = new Teacher("Maria", "Perova", "Aleksandrovna", 1);
 
+        controller.formStudyGroup(1,teacher,students);
 
-        controller.formStudyGroup(teacher,students);
+        List<Student>studentList = new ArrayList<>();
+       Student student6 = new  Student("Смирнов", "Сергей", "Сергеевич", 1);
+       Student student7 =  new Student("Кузнецов", "Кирилл", "Кириллович", 2);
+       Student student8 =  new Student("Сидоров", "Александр", "Александрович", 3);
+       Student student9 = new  Student("Васильев", "Василий", "Васильевич", 4);
+       Student student10 =  new Student("Жданов", "Андрей", "Андреевич", 5);
+       studentList.add(student6);
+        studentList.add(student7);
+        studentList.add(student8);
+        studentList.add(student9);
+        studentList.add(student10);
+
+        Teacher teacher1 = new Teacher("Светалана","Бугаева","Петровна",2);
+
+        controller.formStudyGroup(2,teacher1,studentList);
+
 
 
 

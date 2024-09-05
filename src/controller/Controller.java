@@ -13,8 +13,8 @@ public class Controller {
     private final StudentView studentView = new StudentView();
     private final StudyGroupService studyGroupService = new StudyGroupService();
 
-    public void formStudyGroup(Teacher teacher ,List<Student>students){
-        System.out.println(studyGroupService.formStudyGroup(teacher,students));
+    public void formStudyGroup(int id ,Teacher teacher ,List<Student>students){
+        System.out.println(studyGroupService.formStudyGroup(id ,teacher,students));
     }
 
     public void createStudent(String firstName, String lastName, String middleName){
